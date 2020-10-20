@@ -1,5 +1,5 @@
 Flow report for UART_Rx
-Tue Oct 20 09:23:23 2020
+Tue Oct 20 09:42:00 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,15 +40,15 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Tue Oct 20 09:23:20 2020       ;
+; Flow Status                        ; Successful - Tue Oct 20 09:41:57 2020       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; UART_Rx                                     ;
 ; Top-level Entity Name              ; UART_Rx                                     ;
 ; Family                             ; MAX 10                                      ;
 ; Device                             ; 10M08SAE144C8G                              ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 50 / 8,064 ( < 1 % )                        ;
-;     Total combinational functions  ; 49 / 8,064 ( < 1 % )                        ;
+; Total logic elements               ; 40 / 8,064 ( < 1 % )                        ;
+;     Total combinational functions  ; 31 / 8,064 ( < 1 % )                        ;
 ;     Dedicated logic registers      ; 28 / 8,064 ( < 1 % )                        ;
 ; Total registers                    ; 28                                          ;
 ; Total pins                         ; 11 / 101 ( 11 % )                           ;
@@ -66,7 +66,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/20/2020 09:23:02 ;
+; Start date & time ; 10/20/2020 09:41:39 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; UART_Rx             ;
 +-------------------+---------------------+
@@ -77,7 +77,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 88470672957063.160317498204100         ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 88470672957063.160317609907604         ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
 ; OUTPUT_IO_TIMING_FAR_END_VMEAS      ; Half Signal Swing                      ; --            ; --          ; --         ;
@@ -96,12 +96,12 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:09     ; 1.0                     ; 4785 MB             ; 00:00:20                           ;
-; Fitter               ; 00:00:04     ; 1.0                     ; 5553 MB             ; 00:00:05                           ;
-; Assembler            ; 00:00:00     ; 1.0                     ; 4679 MB             ; 00:00:01                           ;
+; Analysis & Synthesis ; 00:00:08     ; 1.0                     ; 4787 MB             ; 00:00:18                           ;
+; Fitter               ; 00:00:04     ; 1.0                     ; 5554 MB             ; 00:00:05                           ;
+; Assembler            ; 00:00:00     ; 1.0                     ; 4677 MB             ; 00:00:01                           ;
 ; Power Analyzer       ; 00:00:02     ; 1.0                     ; 4817 MB             ; 00:00:01                           ;
 ; Timing Analyzer      ; 00:00:02     ; 1.0                     ; 4779 MB             ; 00:00:02                           ;
-; Total                ; 00:00:17     ; --                      ; --                  ; 00:00:29                           ;
+; Total                ; 00:00:16     ; --                      ; --                  ; 00:00:27                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

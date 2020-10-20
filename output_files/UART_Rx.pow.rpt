@@ -1,5 +1,5 @@
 Power Analyzer report for UART_Rx
-Tue Oct 20 09:23:20 2020
+Tue Oct 20 09:41:57 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -52,19 +52,19 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.03        ;
+; Average used               ; 1.02        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.9%      ;
+;     Processors 2-4         ;   0.8%      ;
 +----------------------------+-------------+
 
 
 +-------------------------------------------------------------------------------------------+
 ; Power Analyzer Summary                                                                    ;
 +----------------------------------------+--------------------------------------------------+
-; Power Analyzer Status                  ; Successful - Tue Oct 20 09:23:20 2020            ;
+; Power Analyzer Status                  ; Successful - Tue Oct 20 09:41:57 2020            ;
 ; Quartus Prime Version                  ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition      ;
 ; Revision Name                          ; UART_Rx                                          ;
 ; Top-level Entity Name                  ; UART_Rx                                          ;
@@ -235,19 +235,19 @@ refer to the applicable agreement for further details.
 ;                                                                                        ;             ;            ;             ;               ;
 ; Node, entity or clock assignment                                                       ;             ;            ;             ;               ;
 ;     -- Number of signals with Toggle Rate from Node, entity or clock assignment        ; 0 (0.0%)    ; 0 (0.0%)   ; 0 (0.0%)    ; 0 (0.0%)      ;
-;     -- Number of signals with Static Probability from Node, entity or clock assignment ; 2 (1.6%)    ; 0 (0.0%)   ; 0 (0.0%)    ; 2 (2.6%)      ;
+;     -- Number of signals with Static Probability from Node, entity or clock assignment ; 2 (1.8%)    ; 0 (0.0%)   ; 0 (0.0%)    ; 2 (3.1%)      ;
 ;                                                                                        ;             ;            ;             ;               ;
 ; Vectorless estimation                                                                  ;             ;            ;             ;               ;
-;     -- Number of signals with Toggle Rate from Vectorless estimation                   ; 115 (92.7%) ; 10 (52.6%) ; 28 (100.0%) ; 77 (100.0%)   ;
-;     -- Number of signals with Zero toggle rate, from Vectorless estimation             ; 6 (4.8%)    ; 1 (5.3%)   ; 0 (0.0%)    ; 5 (6.5%)      ;
-;     -- Number of signals with Static Probability from Vectorless estimation            ; 113 (91.1%) ; 10 (52.6%) ; 28 (100.0%) ; 75 (97.4%)    ;
+;     -- Number of signals with Toggle Rate from Vectorless estimation                   ; 103 (92.0%) ; 10 (52.6%) ; 28 (100.0%) ; 65 (100.0%)   ;
+;     -- Number of signals with Zero toggle rate, from Vectorless estimation             ; 7 (6.3%)    ; 1 (5.3%)   ; 0 (0.0%)    ; 6 (9.2%)      ;
+;     -- Number of signals with Static Probability from Vectorless estimation            ; 101 (90.2%) ; 10 (52.6%) ; 28 (100.0%) ; 63 (96.9%)    ;
 ;                                                                                        ;             ;            ;             ;               ;
 ; Default assignment                                                                     ;             ;            ;             ;               ;
 ;     -- Number of signals with Toggle Rate from Default assignment                      ; 0 (0.0%)    ; 0 (0.0%)   ; 0 (0.0%)    ; 0 (0.0%)      ;
-;     -- Number of signals with Static Probability from Default assignment               ; 9 (7.3%)    ; 9 (47.4%)  ; 0 (0.0%)    ; 0 (0.0%)      ;
+;     -- Number of signals with Static Probability from Default assignment               ; 9 (8.0%)    ; 9 (47.4%)  ; 0 (0.0%)    ; 0 (0.0%)      ;
 ;                                                                                        ;             ;            ;             ;               ;
 ; Assumed 0                                                                              ;             ;            ;             ;               ;
-;     -- Number of signals with Toggle Rate assumed 0                                    ; 9 (7.3%)    ; 9 (47.4%)  ; 0 (0.0%)    ; 0 (0.0%)      ;
+;     -- Number of signals with Toggle Rate assumed 0                                    ; 9 (8.0%)    ; 9 (47.4%)  ; 0 (0.0%)    ; 0 (0.0%)      ;
 +----------------------------------------------------------------------------------------+-------------+------------+-------------+---------------+
 
 
@@ -265,7 +265,7 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Power Analyzer
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Tue Oct 20 09:23:18 2020
+    Info: Processing started: Tue Oct 20 09:41:55 2020
 Info: Command: quartus_pow --read_settings_files=off --write_settings_files=off UART_Rx -c UART_Rx
 Warning (125092): Tcl Script File RAM.qip not found
     Info (125063): set_global_assignment -name QIP_FILE RAM.qip
@@ -289,7 +289,7 @@ Info (215049): Average toggle rate for this design is 0.000 millions of transiti
 Info (215031): Total thermal power estimate for the design is 116.31 mW
 Info: Quartus Prime Power Analyzer was successful. 0 errors, 8 warnings
     Info: Peak virtual memory: 4817 megabytes
-    Info: Processing ended: Tue Oct 20 09:23:20 2020
+    Info: Processing ended: Tue Oct 20 09:41:57 2020
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 

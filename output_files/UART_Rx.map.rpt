@@ -1,5 +1,5 @@
 Analysis & Synthesis report for UART_Rx
-Tue Oct 20 09:23:10 2020
+Tue Oct 20 09:41:48 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -13,12 +13,11 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. Registers Removed During Synthesis
-  9. General Register Statistics
- 10. Port Connectivity Checks: "receive:comb_63"
- 11. Post-Synthesis Netlist Statistics for Top Partition
- 12. Elapsed Time Per Partition
- 13. Analysis & Synthesis Messages
+  8. General Register Statistics
+  9. Port Connectivity Checks: "receive:comb_63"
+ 10. Post-Synthesis Netlist Statistics for Top Partition
+ 11. Elapsed Time Per Partition
+ 12. Analysis & Synthesis Messages
 
 
 
@@ -44,13 +43,13 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Oct 20 09:23:10 2020       ;
+; Analysis & Synthesis Status        ; Successful - Tue Oct 20 09:41:48 2020       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; UART_Rx                                     ;
 ; Top-level Entity Name              ; UART_Rx                                     ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 48                                          ;
-;     Total combinational functions  ; 48                                          ;
+; Total logic elements               ; 38                                          ;
+;     Total combinational functions  ; 30                                          ;
 ;     Dedicated logic registers      ; 28                                          ;
 ; Total registers                    ; 28                                          ;
 ; Total pins                         ; 11                                          ;
@@ -181,16 +180,16 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 48        ;
+; Estimated Total logic elements              ; 38        ;
 ;                                             ;           ;
-; Total combinational functions               ; 48        ;
+; Total combinational functions               ; 30        ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 18        ;
-;     -- 3 input functions                    ; 11        ;
-;     -- <=2 input functions                  ; 19        ;
+;     -- 4 input functions                    ; 13        ;
+;     -- 3 input functions                    ; 2         ;
+;     -- <=2 input functions                  ; 15        ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 34        ;
+;     -- normal mode                          ; 16        ;
 ;     -- arithmetic mode                      ; 14        ;
 ;                                             ;           ;
 ; Total registers                             ; 28        ;
@@ -203,8 +202,8 @@ refer to the applicable agreement for further details.
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
 ; Maximum fan-out                             ; 16        ;
-; Total fan-out                               ; 218       ;
-; Average fan-out                             ; 2.22      ;
+; Total fan-out                               ; 171       ;
+; Average fan-out                             ; 2.14      ;
 +---------------------------------------------+-----------+
 
 
@@ -213,22 +212,10 @@ refer to the applicable agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name      ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------+-------------+--------------+
-; |UART_Rx                   ; 48 (27)             ; 28 (16)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 11   ; 0            ; 0          ; |UART_Rx                 ; UART_Rx     ; work         ;
-;    |receive:comb_63|       ; 21 (21)             ; 12 (12)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |UART_Rx|receive:comb_63 ; receive     ; work         ;
+; |UART_Rx                   ; 30 (25)             ; 28 (16)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 11   ; 0            ; 0          ; |UART_Rx                 ; UART_Rx     ; work         ;
+;    |receive:comb_63|       ; 5 (5)               ; 12 (12)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |UART_Rx|receive:comb_63 ; receive     ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+--------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                       ;
-+---------------------------------------+----------------------------------+
-; Register name                         ; Reason for Removal               ;
-+---------------------------------------+----------------------------------+
-; receive:comb_63|z[2]                  ; Merged with receive:comb_63|g[2] ;
-; receive:comb_63|z[1]                  ; Merged with receive:comb_63|g[1] ;
-; receive:comb_63|z[0]                  ; Merged with receive:comb_63|g[0] ;
-; Total Number of Removed Registers = 3 ;                                  ;
-+---------------------------------------+----------------------------------+
 
 
 +------------------------------------------------------+
@@ -241,7 +228,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 8     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -262,18 +249,18 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; boundary_port         ; 11                          ;
 ; cycloneiii_ff         ; 28                          ;
-;     plain             ; 28                          ;
-; cycloneiii_lcell_comb ; 48                          ;
+;     ENA               ; 8                           ;
+;     plain             ; 20                          ;
+; cycloneiii_lcell_comb ; 30                          ;
 ;     arith             ; 14                          ;
 ;         2 data inputs ; 14                          ;
-;     normal            ; 34                          ;
+;     normal            ; 16                          ;
 ;         1 data inputs ; 1                           ;
-;         2 data inputs ; 4                           ;
-;         3 data inputs ; 11                          ;
-;         4 data inputs ; 18                          ;
+;         3 data inputs ; 2                           ;
+;         4 data inputs ; 13                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 3.20                        ;
-; Average LUT depth     ; 2.31                        ;
+; Average LUT depth     ; 2.14                        ;
 +-----------------------+-----------------------------+
 
 
@@ -292,7 +279,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Tue Oct 20 09:23:01 2020
+    Info: Processing started: Tue Oct 20 09:41:39 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off UART_Rx -c UART_Rx
 Warning (125092): Tcl Script File RAM.qip not found
     Info (125063): set_global_assignment -name QIP_FILE RAM.qip
@@ -304,18 +291,19 @@ Info (12021): Found 2 design units, including 2 entities, in source file uart_rx
 Critical Warning (10846): Verilog HDL Instantiation warning at UART_Rx.v(18): instance has no name File: C:/intelFPGA_lite/18.1/Projects/UART_Rx/UART_Rx.v Line: 18
 Info (12127): Elaborating entity "UART_Rx" for the top level hierarchy
 Info (12128): Elaborating entity "receive" for hierarchy "receive:comb_63" File: C:/intelFPGA_lite/18.1/Projects/UART_Rx/UART_Rx.v Line: 18
+Warning (10230): Verilog HDL assignment warning at UART_Rx.v(42): truncated value with size 9 to match size of target (8) File: C:/intelFPGA_lite/18.1/Projects/UART_Rx/UART_Rx.v Line: 42
 Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 59 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 49 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 9 output pins
-    Info (21061): Implemented 48 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 4785 megabytes
-    Info: Processing ended: Tue Oct 20 09:23:10 2020
+    Info (21061): Implemented 38 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 4787 megabytes
+    Info: Processing ended: Tue Oct 20 09:41:48 2020
     Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:20
+    Info: Total CPU time (on all processors): 00:00:19
 
 
