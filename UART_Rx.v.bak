@@ -1,0 +1,21 @@
+module UART_Rx (input clk,
+					 output reg UART_clk
+					);
+					
+					
+initial UART_clk <= 1'b0;					
+
+reg [49:0]	cnt;
+initial cnt <= 50'd0;				
+
+always @(posedge clk) begin
+	cnt <= cnt + 1'b1;
+	if (cnt == 50'd50000000) begin
+	cnt <= cnt - 50'd50000000;
+	UART_clk <= ~UART_clk;
+	end
+end
+					
+
+					
+endmodule
