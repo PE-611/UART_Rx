@@ -94,7 +94,7 @@ RESERVED_INPUT               : 22        :        :                   :         
 VCCIO1B                      : 23        : power  :                   : 2.5V    : 1B        :                
 RESERVED_INPUT               : 24        :        :                   :         : 1B        :                
 RESERVED_INPUT               : 25        :        :                   :         : 1B        :                
-clk                          : 26        : input  : 2.5 V             :         : 2         : Y              
+clk_Rx                       : 26        : input  : 2.5 V             :         : 2         : Y              
 RESERVED_INPUT               : 27        :        :                   :         : 2         :                
 RESERVED_INPUT               : 28        :        :                   :         : 2         :                
 RESERVED_INPUT               : 29        :        :                   :         : 2         :                
@@ -129,43 +129,43 @@ RESERVED_INPUT               : 57        :        :                   :         
 RESERVED_INPUT               : 58        :        :                   :         : 3         :                
 RESERVED_INPUT               : 59        :        :                   :         : 3         :                
 RESERVED_INPUT               : 60        :        :                   :         : 3         :                
-RESERVED_INPUT               : 61        :        :                   :         : 4         :                
-RESERVED_INPUT               : 62        :        :                   :         : 4         :                
+wr                           : 61        : output : 2.5 V             :         : 4         : N              
+wr_addr[0]                   : 62        : output : 2.5 V             :         : 4         : N              
 GND                          : 63        : gnd    :                   :         :           :                
-RESERVED_INPUT               : 64        :        :                   :         : 4         :                
-RESERVED_INPUT               : 65        :        :                   :         : 4         :                
-RESERVED_INPUT               : 66        :        :                   :         : 4         :                
+wr_addr[7]                   : 64        : output : 2.5 V             :         : 4         : N              
+wr_addr[3]                   : 65        : output : 2.5 V             :         : 4         : N              
+wr_addr[4]                   : 66        : output : 2.5 V             :         : 4         : N              
 VCCIO4                       : 67        : power  :                   : 2.5V    : 4         :                
 GND                          : 68        : gnd    :                   :         :           :                
-RESERVED_INPUT               : 69        :        :                   :         : 4         :                
-RESERVED_INPUT               : 70        :        :                   :         : 4         :                
+wr_addr[6]                   : 69        : output : 2.5 V             :         : 4         : N              
+wr_addr[5]                   : 70        : output : 2.5 V             :         : 4         : N              
 VCCA5                        : 71        : power  :                   : 3.0V/3.3V :           :                
 VCC_ONE                      : 72        : power  :                   : 3.0V/3.3V :           :                
 VCC_ONE                      : 73        : power  :                   : 3.0V/3.3V :           :                
-RESERVED_INPUT               : 74        :        :                   :         : 5         :                
+wr_addr[1]                   : 74        : output : 2.5 V             :         : 5         : N              
 RESERVED_INPUT               : 75        :        :                   :         : 5         :                
 RESERVED_INPUT               : 76        :        :                   :         : 5         :                
 RESERVED_INPUT               : 77        :        :                   :         : 5         :                
-RESERVED_INPUT               : 78        :        :                   :         : 5         :                
-data[0]                      : 79        : output : 2.5 V             :         : 5         : Y              
-data[1]                      : 80        : output : 2.5 V             :         : 5         : Y              
-data[2]                      : 81        : output : 2.5 V             :         : 5         : Y              
+wr_addr[2]                   : 78        : output : 2.5 V             :         : 5         : N              
+data_out[0]                  : 79        : output : 2.5 V             :         : 5         : Y              
+data_out[1]                  : 80        : output : 2.5 V             :         : 5         : Y              
+data_out[2]                  : 81        : output : 2.5 V             :         : 5         : Y              
 VCCIO5                       : 82        : power  :                   : 2.5V    : 5         :                
 GND                          : 83        : gnd    :                   :         :           :                
-data[3]                      : 84        : output : 2.5 V             :         : 5         : Y              
-data[4]                      : 85        : output : 2.5 V             :         : 5         : Y              
-data[5]                      : 86        : output : 2.5 V             :         : 5         : Y              
-data[6]                      : 87        : output : 2.5 V             :         : 5         : Y              
-data[7]                      : 88        : output : 2.5 V             :         : 6         : Y              
-RESERVED_INPUT               : 89        :        :                   :         : 6         :                
-RESERVED_INPUT               : 90        :        :                   :         : 6         :                
+data_out[3]                  : 84        : output : 2.5 V             :         : 5         : Y              
+data_out[4]                  : 85        : output : 2.5 V             :         : 5         : Y              
+data_out[5]                  : 86        : output : 2.5 V             :         : 5         : Y              
+data_out[6]                  : 87        : output : 2.5 V             :         : 5         : Y              
+data_out[7]                  : 88        : output : 2.5 V             :         : 6         : Y              
+UART_clk                     : 89        : output : 2.5 V             :         : 6         : N              
+re                           : 90        : output : 2.5 V             :         : 6         : Y              
 RESERVED_INPUT               : 91        :        :                   :         : 6         :                
 RESERVED_INPUT               : 92        :        :                   :         : 6         :                
 RESERVED_INPUT               : 93        :        :                   :         : 6         :                
 VCCIO6                       : 94        : power  :                   : 2.5V    : 6         :                
 GND                          : 95        : gnd    :                   :         :           :                
 RESERVED_INPUT               : 96        :        :                   :         : 6         :                
-i                            : 97        : output : 2.5 V             :         : 6         : Y              
+RESERVED_INPUT               : 97        :        :                   :         : 6         :                
 RESERVED_INPUT               : 98        :        :                   :         : 6         :                
 RESERVED_INPUT               : 99        :        :                   :         : 6         :                
 RESERVED_INPUT               : 100       :        :                   :         : 6         :                
@@ -209,7 +209,7 @@ GND                          : 137       : gnd    :                   :         
 ~ALTERA_CONF_DONE~ / RESERVED_INPUT : 138       : input  : 2.5 V Schmitt Trigger :         : 8         : N              
 VCCIO8                       : 139       : power  :                   : 2.5V    : 8         :                
 RESERVED_INPUT               : 140       :        :                   :         : 8         :                
-Rx                           : 141       : input  : 2.5 V             :         : 8         : Y              
+Rx_in                        : 141       : input  : 2.5 V             :         : 8         : Y              
 GND                          : 142       : gnd    :                   :         :           :                
 VCCA4                        : 143       : power  :                   : 3.0V/3.3V :           :                
 VCC_ONE                      : 144       : power  :                   : 3.0V/3.3V :           :                
