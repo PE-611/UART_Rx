@@ -4,7 +4,7 @@
 // Company : GSC RF TRINITI										//
 // Description : UART Rx module								  	//
 // Start design : 20.10.2020 										//
-// Last revision : 28.10.2020 									//
+// Last revision : 28.10.2022 									//
 ///////////////////////////////////////////////////////////
 module UART_Rx (input clk_Rx, Rx_in, 
 					 output reg [7:0] data_out, 
